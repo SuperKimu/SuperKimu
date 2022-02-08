@@ -24,5 +24,3 @@ btn = Button(root, text="クリック", command=btncmd)
 btn.pack()
 
 root.mainloop()
-
-##
