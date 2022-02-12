@@ -30,5 +30,3 @@ elif 30 <= bmi < 40:
           print("あなたのBMIは{}です。ダイエットしましょう!".format(bmi))
 
 from tkinter import *
-win = tkinter.Tk();
-win.mainloop();
