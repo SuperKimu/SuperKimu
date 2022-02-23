@@ -39,7 +39,7 @@ p = re.compile("ca.e") #どんな正規式を使うか、()に入れる。.は�
 
 def print_match(m):
           if m:
-                    print(m.group())
+                    print("m.group()", m.group())
           else:
                     print("マッチングしてません")
 
@@ -51,6 +51,9 @@ def print_match(m):
 # print_match(m)
 #出力：　エラー
 
-m = p.match("careless")
+# m = p.match("careless")
+# print_match(m)
+# #出力 : care 、　後ろになにがあっても関係なし、最初から4文字、ca.eでマッチング判断
+
+m = p.search("good care")
 print_match(m)
-#出力 : care 、　後ろになにがあっても関係なし、最初から4文字、ca.eでマッチング判断

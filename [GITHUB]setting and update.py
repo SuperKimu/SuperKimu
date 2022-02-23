@@ -17,3 +17,28 @@ git push origin master
 """
 
 print("have a nice day!")
+
+#遠隔レポジトリ関連
+"""
+git remote -v 
+⇒現在紐づけされてる遠隔レポジトリ確認
+
+git remote remove origin
+⇒当該遠隔レポジトリとの紐づけを除去（削除）
+
+git remote add origin " https://github ~~~~~ "
+※git config --global user.email & --global user.name も要るかも？
+
+"""
+
+#branch関連
+"""
+git branch 
+or git branch --list
+⇒現在のbranch
+
+git branch -D "branch name"
+⇒当該branchの削除
+
+
+"""
