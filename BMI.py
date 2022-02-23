@@ -16,7 +16,7 @@ loading = """
 
 
 少々お待ちください。
-
+  
 """
 print(loading)
 bmi = round((weight / (height * height)) *10000)
