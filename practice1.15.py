@@ -1,115 +1,15 @@
-# python = "Python is Beautiful"
-# print(python) #文字列が定義された通りに出力される
-# print(python.lower()) #全て小文字にして出力　
-# print(python.upper()) #全て大文字にして出力
-# print(python[0].isupper()) #0番目のアルファベットは大文字か？
-# print(python[1].islower()) #1番目のアルファベットは小文字か？
-# print(len(python)) #文字列の全ての長さを数字で表示
-# print(python.replace("Python","Java")) #　変数　～を～へ変更する
-
-# index = python.index("t") 
-# print(index) #2、python関数で、tは何番目に位置しているのか？
-# index = python.index("t", index + 1) 
-# print(index) #14、次のTは何番目に位置しているのか？
-
-# print(python.find("t")) #2、python関数で、tは何番目に位置しているのか？
-# print(python.find("q")) #-1、求めている値がなかったら、-1表示
-# # print(python.index("q")) #エラー、求めている値がなかったら、エラー表示
-# #プログラムが終了になり、次のコードからは実行しない
-# print("hello")
-
-# print(python.count("t")) #2、tの値がいくつあるのか
 
 
 
 
-# name = "ミミ"
-# age = 4
-# hobby = "昼寝"
-# is_adult = age >= 3
-
-# print(" 我が家の" + animal + "の名前は" + name + "です")
-# print( name + "は" + str(age) + "歳で" + hobby + "が好きです" )
-# print( name,"は",age,"歳で",hobby,"が好きです")
-# print( animal + "は大人ですか？" + str(is_adult))
-# print( animal,"は大人ですか？",is_adult)
-# animal = "犬"
-# name = "モモ"
-# print("我が家の" + animal + "の名前は" + name + "です")
-
-# print(2+2) #4
-# print(5-2) #3
-# print(6*2) #12
-# print(8/4) #2
-# print(2**5) #32
-# print(11%3) #2、余り
-# print(11//3) #3、商(しょう)
-# print(20 > 5) #true
-# print(5 >=6) #false
-# print(5< 20) #true
-# print(5 <= 6) #true 
-# print(5 == 5) #true、前と後ろの値は同じか？
-# print(6 == 3) #false
-# print(3+2+3 == 8) #true
-
-# print(3 + 4 * 5) #23
-# print((3+4)*5) #35
-# number =  3 + 4 * 5 #23
-# print(number) #23
-# number = number + 5 #28
-# print(number) #28
-# number += 5 
-# print(number) #33
-# number -= 4 
-# print(number) #29
-# number *= 2
-# print(number) #58
-# number %= 3
-# print(number) #1
-# number /= 3
-# print(number) # 0.3333333333333
-# number = number + 1
-# print(number) # 1.33333333333333
 
 
-# print(abs(-10)) #10，絶対値
-# print(pow(5,3)) #5^3,125
-# print(max(3,18)) #18,最大値
-# print(min(3,18)) #3,最小値
-# print(round(3.12345)) #3,四捨五入　
-# print(round(3.51)) #4
 
-# from math import * #math　ライブラリの　全てを　利用する
-# print(floor(5.88)) #5、切り捨て
-# print(ceil(4.12345)) #5、切り上げ
-# print(sqrt(25)) #5,ルート
 
-# from os import nice
-# from random import *
-# from tkinter import N
-# print(random()) #0.0～1.0未満　任意の値を生産
-# print(random()*10) 
-# print(int(random()*10)) #小数点以下切り捨てて任意の値を生産
-# print(int ( random() * 10) + 1 )
-# print(int(random()*50)+1) #1~50以下任意の値を作る
-# print(randrange(1,51)) #1~51未満任意の値を作る
-# print(randint(1,50)) #1~50以下任意の値を作る
 
-# date = randint(4,28)
-# print("오프라인 스터디 모임 날짜는 매월" + str(date) + "일로 선정되었습니다.")
 
-# sentence = "私は男です"
-# print(sentence)
-# sentence2 = "pythonは楽しいです"
-# print(sentence2)
-# sentence3 = """ 
 
-# 私は男です
 
-# pythonは楽しいです
-
-# """
-# print(sentence3) # """~""" 文字列だけでなく、行間も適用される
 
 
 # me = "121212-1234567"
