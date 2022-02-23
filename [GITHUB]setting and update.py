@@ -38,7 +38,7 @@ or git branch --list
 ⇒現在のbranch
 
 git branch -D "branch name"
-⇒当該branchの削除
+⇒当該branchの削除 
 
 
 """
