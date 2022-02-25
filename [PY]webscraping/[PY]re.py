@@ -22,11 +22,12 @@ import re
 
 p = re.compile("ca.e") #どんな正規式を使うか、()に入れる。.は一つの文字を意味
 #(ca?e) 
-#cafe, care, cave, case .... など
+#cafe, care, cave, case .... など caffe (X)
 # ^ : 文字列の始まり
-#(^de) : desk, destination ..など
+#(^de) : desk, destination ..など fade (X)
 # $ ：文字列の終わり
-#(se$) : case, base... など
+#(se$) : case, base... など face (X)
+
 
 # m = p.match("case") # caseが、上の定義した、正規式にマッチングしているのか?
 # print(m.group())
@@ -37,15 +38,19 @@ p = re.compile("ca.e") #どんな正規式を使うか、()に入れる。.は�
 # else:
 #           print("マッチングしてません")
 
-def print_match(m):
+def print_match(m): #p = re.compile("ca.e") / m = p.search("careless")で実行したとき
           if m:
-                    print("m.group()", m.group())
+                    print("m.group() :", m.group()) #出力：care　一致する文字列を返す
+                    print("m.string:", m.string)    #出力:careless　入力された文字列を返す
+                    print("m.start():", m.start())  #出力:0　一致する文字列のスタートINDEX　0番からあってる
+                    print("m.end():", m.end())      #出力：4　一致する文字列の終わり　INDEX　4番前まであってる
+                    print("m.span()",m.span())    #出力：　0,4　一致する文字列のスタート/終わりINDEX 0番から、4番前まで合ってる
           else:
                     print("マッチングしてません")
 
-# m = p.match("care")
+# m = p.match("care") #match : 与えられた文字列の最初から一致しているか確認
 # print_match(m)
-#出力　：　care
+# 出力　：　care
 
 # m = p.match("cccc")
 # print_match(m)
@@ -55,5 +60,5 @@ def print_match(m):
 # print_match(m)
 # #出力 : care 、　後ろになにがあっても関係なし、最初から4文字、ca.eでマッチング判断
 
-m = p.search("good care")
+m = p.search("careless") #search : 与えられた文字列の中に一致しているのがあるか確認
 print_match(m)
