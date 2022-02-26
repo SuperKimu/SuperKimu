@@ -77,6 +77,8 @@ print(list) #出力：cafe
 ※普通は p = re.compile("求める形態")でよく使う
 2. m = p.match("比較する文字列") :与えられた文字列が最初から一致するか確認
    m = p.search("比較する文字列") :与えられた文字列の中で、一致するものがあるか確認
-   list = p.findall("比較する文字列") :
+   list = p.findall("比較する文字列") : 一致する全てをリストの形式で返す
 
+※w3schoolでさらに勉強可能
+※docs.python.org/3/library/re.html
 """
