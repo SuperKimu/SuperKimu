@@ -62,3 +62,21 @@ def print_match(m): #p = re.compile("ca.e") / m = p.search("careless")で実行�
 
 m = p.search("careless") #search : 与えられた文字列の中に一致しているのがあるか確認
 print_match(m)
+
+
+list = p.findall("good care cafe") #一致するすべてをリストにして返す 
+print(list) #出力：cafe, cafe
+
+list = p.findall("good care") #一致するすべてをリストにして返す 
+print(list) #出力：cafe
+
+
+"""
+正規式を使うときは
+1. re.compile("求める形態")
+※普通は p = re.compile("求める形態")でよく使う
+2. m = p.match("比較する文字列") :与えられた文字列が最初から一致するか確認
+   m = p.search("比較する文字列") :与えられた文字列の中で、一致するものがあるか確認
+   list = p.findall("比較する文字列") :
+
+"""

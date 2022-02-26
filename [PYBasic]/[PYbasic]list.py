@@ -69,3 +69,70 @@ print("hello") #friend変数キー4に何もなかった為、Noneと表示さ�
 print(friend.get(5, "空き")) #キー5は何もなかった為、Noneではなく「空き」と表示させる
 
 print("hello") #friend変数キー4に何もなかった為、エラーになり、プログラム終了、helloは表示されない。
+
+me = "121212-1234567"
+#順番数えるとき、1ではなくて0を起算点に
+
+print(me[5]) #2、左から5番目の値を表示
+print(me[0:5]) #12121、左から0～4番目まで値を表示
+print(me[1:3]) #21、左から1～2番目までの値を表示
+print(me[0:6]) #121212、左から0～5番目まで値を表示
+print(me[:6]) #121212、0は省ける
+print(me[7:14]) #1234567、左から7～13番目まで値を表示
+print(me[7:]) #1234567、0は省ける
+print(me[-7:]) #1234567、-符号を使い、右からでも表示可能
+
+
+print("a" + "b") #ab
+print("a", "b") #a b
+
+print("私たちは%d歳です。" %30) #dは整数
+print("%sは30歳です。" %"私たち") #sは文字列、""で囲む
+print("私は%s歳です。" %30)
+print("%cは30歳です。"%"私") #cは文字、""で囲むのは、sと一緒だが、一文字しかできない
+print("私は%s色と%s色が好きです。" %("赤","白"))
+
+print("私は{}歳です。".format(30)) #{}にformatの値を入れる
+
+print("私は{}色と{}色が好きです。".format("赤","白"))
+print("私は{0}色と{1}色が好きです。".format("赤","白"))
+print("私は{1}色と{0}色が好きです。".format("赤","白"))
+
+print("私は{age}歳で、{color}色が好きです。".format(age = 30 , color = "赤"))
+
+age=30
+color="赤"
+print(f"私は{age}歳で、{color}色が好きです。")
+
+#\n : 行間を変える
+print("おはようございます\nこんにちは\nこんばんは")
+print('私は"男"です')
+
+#\ : ""か''をそのまま表示
+print("私は\"男\"です")
+print("私は\'男\'です")
+
+#\\ : 文字列の中で\を表示するとき使う
+#E:\practice が　出力したい場合
+print("E:\\practice")
+
+# \r : マウスカーソルを一番前へ移動する（文字列が上書きされながら書き換える）
+print("black sky\rgreen")
+print("red sky\rpink")
+
+# \b : バックスペース、\b前の一文字削除
+print("blacks\bsky")
+
+# \t : Tab、キーボードのTabと同じ効果
+print("blue\tsky")
+
+site = "http://youtube.com"
+site = "http://yahoo.com"
+url = site.replace("http://","")
+#siteの変数に入ってる文字列で、"http://"を""へ変換（空白にする）
+url = url[:url.index(".")] 
+#url変数の中の文字列で、最初から、"."の直前まで、スライスする
+password = url[:3] + str(len(url)) + str(url.count("n")) + "!"
+print(password)
+print("{0}のパスワードは{1}です。".format(site, password))
+
