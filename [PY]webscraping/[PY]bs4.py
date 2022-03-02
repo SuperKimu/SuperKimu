@@ -29,6 +29,7 @@ print(soup.a["name"])
 print(soup.a["id"])
 #出力結果：pagetop
 print(soup.find("h2", attrs={"class":"yjM"}))
-#soup客体で、一番最初に見つかったh2のelementで、classがyjMのところを探して返す。
+#soup客体で、一番最初に見つかったh2のelementで、classの値がyjMのところを探して返す。
 # 出力結果：<h2 class="yjM">今日のアメダスランキング</h2>
-
+print(soup.find("h2", attrs={"class":"yjM"}).get_text())
+# 出力結果：今日のアメダスランキング 

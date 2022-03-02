@@ -10,7 +10,7 @@ html = urlopen("https://travel.rakuten.co.jp/HOTEL/158346/review.html")
 bsobject = BeautifulSoup(html, "html.parser")
 
 # a href = リンク名、リンク先
-for link in bsobject.find_all('dl'):
+for link in bsobject.find_all('title'):
                print(link.text.strip(), link.get('commentSentence'))
 
 # #img src = イメージ名、イメージリンク先
