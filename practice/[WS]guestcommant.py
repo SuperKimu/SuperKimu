@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-#yahooニュースのトピックス
 
 
 #御宿野乃なんば　じゃらん　口コミ#
