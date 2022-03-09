@@ -40,3 +40,4 @@ res.raise_for_status()
 soup = BeautifulSoup(res.content, "lxml")
 realxrp = soup.find("div", attrs={"class":"YMlKec fxKbKc"}).get_text()
 print("現在1リップルの値段は"+realxrp+"円です。")
+
