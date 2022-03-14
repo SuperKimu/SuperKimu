@@ -16,6 +16,9 @@ git push origin master
 
 """
 
+from platform import python_branch
+
+
 print("have a nice day!")
 
 #遠隔レポジトリ関連
@@ -40,5 +43,14 @@ or git branch --list
 git branch -D "branch name"
 ⇒当該branchの削除 
 
+
+"""
+
+
+#compiler / interpreter
+"""
+pythonはinterpreter方式
+compiler方式 = コードを作成したら、パソコンが認識できる内容へ一度変換されてから実行される
+interpreter方式 = 一行ずつ実行可能、結果もすぐ確認でき、コードも修正しながら作れる。
 
 """

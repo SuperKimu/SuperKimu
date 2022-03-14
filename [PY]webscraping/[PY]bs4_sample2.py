@@ -39,7 +39,11 @@ for cartoon in cartoons: #反復
 
 #点数情報
 
+total_rates = 0
 points = soup.find_all("div",attrs={"class":"rating_type"})
 for point in points:
           rate = point.find("strong").get_text()
           print(rate)
+          total_rates += float(rate)
+print(" 合計点数 :", total_rates)
+print(" 平均点数 :", total_rates/ len(points))
